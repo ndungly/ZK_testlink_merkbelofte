@@ -243,7 +243,6 @@ donkerblauw #002857
 .body-txt span {
     font-family: "PT Sans" !important;
     color: #002857 !important;
-    font-weight: normal !important;
     font-style: normal !important;
     line-height: 150% !important;
 }
@@ -434,13 +433,13 @@ function init_page()
     }}];
 		og976.cwObj={};
 		og976.cwObj.arChld=[
-    {type:6,on:1001,delay:0,name:'OnGroupHide', actItem:function(){
+    {type:6,on:1001,delay:0,name:'OnGroupModVar', actItem:function(){
         grpAction0for976();
     }},
     {type:6,on:1001,delay:0,name:'OnGroupChange', actItem:function(){
         grpAction1for976();
     }},
-    {type:6,on:1001,delay:0,name:'OnGroupModVar', actItem:function(){
+    {type:6,on:1001,delay:0,name:'OnGroupHide', actItem:function(){
         grpAction2for976();
     }}];
 		og2609.cwObj={};
@@ -839,7 +838,7 @@ if( is.min ) {
 
 	og874.type=14;
 	grpAction0for976 = function(pF){
-    og242.hide(); 
+    VarWoordkeuze.sub('1'); 
     if(typeof pF == 'function') pF();
 
 };
@@ -851,7 +850,7 @@ if( is.min ) {
 };
 
 	grpAction2for976 = function(pF){
-    VarWoordkeuze.sub('1'); 
+    og242.hide(); 
     if(typeof pF == 'function') pF();
 
 };
