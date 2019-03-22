@@ -389,11 +389,8 @@ function init_page()
     {type:6,on:1001,delay:200,name:'OnGroupShowAutoText', actItem:function(){
         grpAction2for2770();
     }},
-    {type:6,on:1001,delay:200,name:'OnGroupShowGrpFeedback', actItem:function(){
-        grpAction3for2770();
-    }},
     {type:6,on:1001,delay:0,name:'OnGroupModVar', actItem:function(){
-        grpAction4for2770();
+        grpAction3for2770();
     }}];
 		og2769.cwObj={};
 		og2769.cwObj.arChld=[
@@ -487,12 +484,6 @@ if( is.min ) {
 };
 
 	grpAction3for2770 = function(pF){
-    og1816.show(); 
-    if(typeof pF == 'function') pF();
-
-};
-
-	grpAction4for2770 = function(pF){
     VarProgress.add('05_done'); 
     if(typeof pF == 'function') pF();
 

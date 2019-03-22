@@ -337,6 +337,7 @@ if( !is.min )
     document.write( "Your browser does not support dynamic html. Please download a current version of either <a href='http://www.microsoft.com/ie/'>Microsoft Internet Explorer or Edge</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> or <a href='http://www.mozilla.com/firefox/'>Mozilla Firefox</a> and try visiting our site again. Thank You.<br /><br />" )
 
 var VarWordRef = new Variable( 'VarWordRef', '', 0, 0, '', 365, 'zk_merkbelofte.html', f );
+var AICC_Lesson_Status = new Variable( 'AICC_Lesson_Status', '0', 0, 0, null, null, 'zk_merkbelofte.html', f );
 var VarTriMuteAllFLV = new Variable( 'VarTriMuteAllFLV', '', 0, 0, null, null, 'zk_merkbelofte.html'  );
 var bRcdTitle = false;
 var pgWidth_phonePort = 480;
@@ -374,6 +375,7 @@ function init_page()
 		og4.cwObj={};
 		og4.cwObj.arChld=[
     ];
+		AICC_Lesson_Status.set('Completed');
 		trivPage.issueShowActions(arWnds);
 		trivArExec(arWnds,function(wnd){ wnd.issueActions(11); });
 		trivPage.actionMute();
