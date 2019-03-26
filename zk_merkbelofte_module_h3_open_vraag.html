@@ -313,7 +313,7 @@ donkerblauw #002857
 .input-field:focus {
     color: #002857 !important;
     border: 2px solid rgb(214,239,240) !important;
-	background: rgba(255,255,255,0.3) !important;
+	background: rgba(255,255,255,1) !important;
 }
 
 </style>
@@ -406,6 +406,10 @@ function init_page()
     ];
 		if(VarProgress.contains('05_done')){
 {og2770.issueActions(1001);}
+}
+else if(typeof pF == 'function') pF();
+if(VarEntry_1805.equals('~~~null~~~')){
+text2763.show(); 
 }
 else if(typeof pF == 'function') pF();
 		trivPage.issueShowActions(arWnds);
