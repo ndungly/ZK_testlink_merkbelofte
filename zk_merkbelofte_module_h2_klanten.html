@@ -393,10 +393,6 @@ function init_page()
 		og1604.cwObj={};
 		og1604.cwObj.arChld=[
     ];
-		if(!VarProgress.contains('03_done')){
-og1604.show(); 
-}
-else if(typeof pF == 'function') pF();
 		trivPage.issueShowActions(arWnds);
 		trivArExec(arWnds,function(wnd){ wnd.issueActions(11); });
 		trivPage.actionMute();
@@ -436,7 +432,7 @@ if( is.min ) {
 	var image121 = new jsWndImage(); //H2_highlight
 	var shape1539 = new jsWndShape(); //Rounded Rectangle
 	var og1555 = new jsWndOther(); //Positief1
-	var image1572 = new jsWndImage(); //Pijl_omlaag
+	var image2920 = new jsWndImage(); //Pijl_omlaag P1
 	var image1598 = new jsWndImage(); //Tekstballon1
 	var image1643 = new jsWndImage(); //Mask Group 51
 	var text1649 = new jsWndText(); //Mirjam
@@ -450,7 +446,7 @@ if( is.min ) {
 	var text1663 = new jsWndText(); //Quote
 	var text1662 = new jsWndText(); //Marco
 	var og1556 = new jsWndOther(); //Positief2
-	var image1580 = new jsWndImage(); //Pijl_omhoog
+	var image1580 = new jsWndImage(); //Pijl_omhoog2
 	var image1673 = new jsWndImage(); //Mask Group 53
 	var image1690 = new jsWndImage(); //Tekstballon7
 	var text1684 = new jsWndText(); //Arno
@@ -465,7 +461,7 @@ if( is.min ) {
 	var text1694 = new jsWndText(); //Henrieke
 	var shape1540 = new jsWndShape(); //Rounded Rectangle
 	var og1560 = new jsWndOther(); //Negatief1
-	var image1576 = new jsWndImage(); //Pijl_omlaag
+	var image1576 = new jsWndImage(); //Pijl_omlaag N1
 	var image1701 = new jsWndImage(); //Tekstballon1
 	var image1705 = new jsWndImage(); //Mask Group 59
 	var text1710 = new jsWndText(); //Nico
@@ -475,8 +471,8 @@ if( is.min ) {
 	var text1716 = new jsWndText(); //Peter
 	var image1707 = new jsWndImage(); //Mask Group 60
 	var og1564 = new jsWndOther(); //Negatief2
-	var image1594 = new jsWndImage(); //Pijl_omlaag
-	var image1590 = new jsWndImage(); //Pijl_omhoog
+	var image2932 = new jsWndImage(); //Pijl_omlaag N2
+	var image2943 = new jsWndImage(); //Pijl_omhoog N2
 	var image1729 = new jsWndImage(); //Tekstballon1
 	var image1733 = new jsWndImage(); //Mask Group 58
 	var text1736 = new jsWndText(); //Quote
@@ -486,7 +482,7 @@ if( is.min ) {
 	var text1741 = new jsWndText(); //Quote
 	var text1740 = new jsWndText(); //Peter
 	var og1568 = new jsWndOther(); //Negatief3
-	var image1586 = new jsWndImage(); //Pijl_omhoog
+	var image2959 = new jsWndImage(); //Pijl_omhoog N3
 	var image2743 = new jsWndImage(); //Mask Group 61
 	var image1758 = new jsWndImage(); //Tekstballon8
 	var text1754 = new jsWndText(); //Stephanie
@@ -508,22 +504,22 @@ if( is.min ) {
 	var text1610 = new jsWndText(); //>>>Titel1
 	var text1611 = new jsWndText(); //>>>tekst
 	og4.type=14;
-	og1555.arChld=[image1572,image1598,image1643,text1649,text1653,image1600,image1645,text1658,text1657,image1602,image1647,text1663,text1662];
+	og1555.arChld=[image2920,image1598,image1643,text1649,text1653,image1600,image1645,text1658,text1657,image1602,image1647,text1663,text1662];
 	og1555.type=14;
 	og1556.arChld=[image1580,image1673,image1690,text1684,text1683,image1667,image1677,text1669,text1668,image1692,image1675,text1695,text1694];
 	og1556.type=14;
 	og1560.arChld=[image1576,image1701,image1705,text1710,text1709,image1714,text1717,text1716,image1707];
 	og1560.type=14;
-	og1564.arChld=[image1594,image1590,image1729,image1733,text1736,text1735,image1746,image1750,text1741,text1740];
+	og1564.arChld=[image2932,image2943,image1729,image1733,text1736,text1735,image1746,image1750,text1741,text1740];
 	og1564.type=14;
-	og1568.arChld=[image1586,image2743,image1758,text1754,text1753,image2752,image2757,text2746,text2745];
+	og1568.arChld=[image2959,image2743,image1758,text1754,text1753,image2752,image2757,text2746,text2745];
 	og1568.type=14;
 	og1604.arChld=[shape1605,shape1606,image1607,shape1608,text1610,text1611];
 	og1604.type=14;
 	var alertCtr = 0;
 	var trivPageId=117; //trivPage.id
-	var arWnds = [shape80,shape79,text92,image76,image125,image123,image121,shape1539,image1572,image1598,image1643,text1649,text1653,image1600,image1645,text1658,text1657,image1602,image1647,text1663,text1662,image1580,image1673,image1690,text1684,text1683,image1667,image1677,text1669,text1668,image1692,image1675,text1695,text1694,shape1540,image1576,image1701,image1705,text1710,text1709,image1714,text1717,text1716,image1707,image1594,image1590,image1729,image1733,text1736,text1735,image1746,image1750,text1741,text1740,image1586,image2743,image1758,text1754,text1753,image2752,image2757,text2746,text2745,image1544,image1546,text143,textbutton77,textbutton1534,textbutton1615,shape1605,shape1606,image1607,shape1608,text1610,text1611];
-	var arAttachObj = [og4,shape80,shape79,textbutton77,text92,image76,image125,image123,image121,shape1539,og1555,image1572,image1598,image1643,text1649,text1653,image1600,image1645,text1658,text1657,image1602,image1647,text1663,text1662,og1556,image1580,image1673,image1690,text1684,text1683,image1667,image1677,text1669,text1668,image1692,image1675,text1695,text1694,shape1540,og1560,image1576,image1701,image1705,text1710,text1709,image1714,text1717,text1716,image1707,og1564,image1594,image1590,image1729,image1733,text1736,text1735,image1746,image1750,text1741,text1740,og1568,image1586,image2743,image1758,text1754,text1753,image2752,image2757,text2746,text2745,image1544,image1546,textbutton1534,textbutton1615,text143,og1604,shape1605,shape1606,image1607,shape1608,text1610,text1611];
+	var arWnds = [shape80,shape79,text92,image76,image125,image123,image121,shape1539,image2920,image1598,image1643,text1649,text1653,image1600,image1645,text1658,text1657,image1602,image1647,text1663,text1662,image1580,image1673,image1690,text1684,text1683,image1667,image1677,text1669,text1668,image1692,image1675,text1695,text1694,shape1540,image1576,image1701,image1705,text1710,text1709,image1714,text1717,text1716,image1707,image2932,image2943,image1729,image1733,text1736,text1735,image1746,image1750,text1741,text1740,image2959,image2743,image1758,text1754,text1753,image2752,image2757,text2746,text2745,image1544,image1546,text143,textbutton77,textbutton1534,textbutton1615,shape1605,shape1606,image1607,shape1608,text1610,text1611];
+	var arAttachObj = [og4,shape80,shape79,textbutton77,text92,image76,image125,image123,image121,shape1539,og1555,image2920,image1598,image1643,text1649,text1653,image1600,image1645,text1658,text1657,image1602,image1647,text1663,text1662,og1556,image1580,image1673,image1690,text1684,text1683,image1667,image1677,text1669,text1668,image1692,image1675,text1695,text1694,shape1540,og1560,image1576,image1701,image1705,text1710,text1709,image1714,text1717,text1716,image1707,og1564,image2932,image2943,image1729,image1733,text1736,text1735,image1746,image1750,text1741,text1740,og1568,image2959,image2743,image1758,text1754,text1753,image2752,image2757,text2746,text2745,image1544,image1546,textbutton1534,textbutton1615,text143,og1604,shape1605,shape1606,image1607,shape1608,text1610,text1611];
 	var arPooledMedia = [];
 }
 

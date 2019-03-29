@@ -377,10 +377,6 @@ function init_page()
 		og2161.cwObj={};
 		og2161.cwObj.arChld=[
     ];
-		if(!VarProgress.contains('07_done')){
-og2161.show(); 
-}
-else if(typeof pF == 'function') pF();
 		trivPage.issueShowActions(arWnds);
 		trivArExec(arWnds,function(wnd){ wnd.issueActions(11); });
 		trivPage.actionMute();

@@ -377,20 +377,17 @@ function init_page()
     ];
 		og1623.cwObj={};
 		og1623.cwObj.arChld=[
-    {type:6,on:1001,delay:0,name:'OnGroupHide', actItem:function(){
+    {type:6,on:1001,delay:0,name:'OnGroupShow', actItem:function(){
         grpAction0for1623();
     }},
-    {type:6,on:1001,delay:0,name:'OnGroupShow', actItem:function(){
+    {type:6,on:1001,delay:0,name:'OnGroupHide', actItem:function(){
         grpAction1for1623();
     }},
     {type:6,on:1001,delay:0,name:'OnGroupHide', actItem:function(){
         grpAction2for1623();
     }},
-    {type:6,on:1001,delay:0,name:'OnGroupHide', actItem:function(){
-        grpAction3for1623();
-    }},
     {type:6,on:1001,delay:0,name:'OnGroupShow', actItem:function(){
-        grpAction4for1623();
+        grpAction3for1623();
     }}];
 		og2809.cwObj={};
 		og2809.cwObj.arChld=[
@@ -541,11 +538,7 @@ function init_page()
 		og834.cwObj={};
 		og834.cwObj.arChld=[
     ];
-		if(!VarProgress.contains('02_done')){
-og823.show(); 
-}
-else if(typeof pF == 'function') pF();
-if(VarProgress.contains('02_done')){
+		if(VarProgress.contains('02_done')){
 {og1623.issueActions(1001);}
 }
 else if(typeof pF == 'function') pF();
@@ -690,30 +683,24 @@ if( is.min ) {
 	var textbutton1338 = new jsWndTextButton(); //Vorige
 	og4.type=14;
 	grpAction0for1623 = function(pF){
-    og823.hide(); 
-    if(typeof pF == 'function') pF();
-
-};
-
-	grpAction1for1623 = function(pF){
     og1323.show(); 
     if(typeof pF == 'function') pF();
 
 };
 
-	grpAction2for1623 = function(pF){
+	grpAction1for1623 = function(pF){
     og856.hide(); 
     if(typeof pF == 'function') pF();
 
 };
 
-	grpAction3for1623 = function(pF){
+	grpAction2for1623 = function(pF){
     og848.hide(); 
     if(typeof pF == 'function') pF();
 
 };
 
-	grpAction4for1623 = function(pF){
+	grpAction3for1623 = function(pF){
     textbutton1332.show(); 
     if(typeof pF == 'function') pF();
 

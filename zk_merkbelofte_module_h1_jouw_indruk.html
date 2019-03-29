@@ -558,20 +558,12 @@ function init_page()
 		og256.cwObj={};
 		og256.cwObj.arChld=[
     ];
-		if(!VarProgress.contains('01_done')){
-og182.show(); 
-}
-else if(typeof pF == 'function') pF();
-if(VarProgress.contains('01_done')){
+		if(VarProgress.contains('01_done')){
 og273.show(); 
 }
 else if(typeof pF == 'function') pF();
 if(VarProgress.contains('01_done')){
 og714.hide(); 
-}
-else if(typeof pF == 'function') pF();
-if(VarProgress.contains('01_done')){
-og182.hide(); 
 }
 else if(typeof pF == 'function') pF();
 if(VarProgress.contains('01_done')){
@@ -678,6 +670,7 @@ if( is.min ) {
 	var image693 = new jsWndImage(); //Hotspot_Rob
 	var image695 = new jsWndImage(); //Hotspot_Trudie
 	var image685 = new jsWndImage(); //Hotspot_Bas
+	var textbutton2910 = new jsWndTextButton(); //Vorige
 	var textbutton268 = new jsWndTextButton(); //Volgende
 	var og736 = new jsWndOther(); //Hotspot Groot
 	var shape738 = new jsWndShape(); //Overlay
@@ -737,8 +730,8 @@ if( is.min ) {
 	var og256 = new jsWndOther(); //Feedback popup
 	var shape257 = new jsWndShape(); //Overlay
 	var shape258 = new jsWndShape(); //White bg
-	var image259 = new jsWndImage(); //Kruisje
-	var shape260 = new jsWndShape(); //Click area
+	var image2904 = new jsWndImage(); //Kruisje
+	var shape2905 = new jsWndShape(); //Click area
 	var text262 = new jsWndText(); //>>>Titel1
 	var text263 = new jsWndText(); //>>>tekst
 	og4.type=14;
@@ -1015,7 +1008,7 @@ if( is.min ) {
 	og2609.type=14;
 	og242.arChld=[shape395,shape233,image237,shape244];
 	og242.type=14;
-	og273.arChld=[shape1356,image687,image689,image691,image693,image695,image685,textbutton268];
+	og273.arChld=[shape1356,image687,image689,image691,image693,image695,image685,textbutton2910,textbutton268];
 	og273.type=14;
 	og736.arChld=[shape738,textbutton862,shape737,image747,video821,text743,text742];
 	og736.type=14;
@@ -1031,12 +1024,12 @@ if( is.min ) {
 	og2348.type=14;
 	og182.arChld=[shape172,shape173,image174,shape176,text178,text177];
 	og182.type=14;
-	og256.arChld=[shape257,shape258,image259,shape260,text262,text263];
+	og256.arChld=[shape257,shape258,image2904,shape2905,text262,text263];
 	og256.type=14;
 	var alertCtr = 0;
 	var trivPageId=24; //trivPage.id
-	var arWnds = [shape80,shape79,text92,image76,image104,image106,image109,shape184,text220,text87,textbutton77,textbutton532,textbutton351,textbutton437,textbutton317,textbutton641,textbutton471,textbutton549,textbutton624,textbutton299,textbutton488,textbutton368,textbutton378,textbutton573,textbutton498,textbutton515,textbutton186,textbutton704,textbutton675,textbutton658,textbutton607,textbutton454,textbutton211,textbutton420,textbutton334,textbutton590,textbutton403,shape395,shape233,image237,shape244,textbutton539,textbutton344,textbutton430,textbutton310,textbutton634,textbutton464,textbutton556,textbutton617,textbutton292,textbutton505,textbutton361,textbutton385,textbutton566,textbutton481,textbutton522,textbutton188,textbutton697,textbutton668,textbutton651,textbutton600,textbutton447,textbutton206,textbutton413,textbutton327,textbutton583,textbutton396,shape1356,image687,image689,image691,image693,image695,image685,textbutton268,shape738,textbutton862,shape737,image747,video821,text743,text742,shape2207,textbutton2237,shape2217,image2227,video2221,text2222,text2223,shape2246,textbutton2260,shape2250,image2268,video2254,text2255,text2256,shape2279,textbutton2307,shape2283,image2297,video2287,text2288,text2289,shape2316,textbutton2330,shape2320,image2338,video2324,text2325,text2326,shape2349,textbutton2381,shape2353,image2363,video2357,text2358,text2359,shape172,shape173,image174,shape176,text178,text177,shape257,shape258,image259,shape260,text262,text263];
-	var arAttachObj = [og4,shape80,shape79,textbutton77,text92,image76,image104,image106,image109,og804,og791,og714,shape184,text220,og874,og976,og2609,textbutton532,textbutton351,textbutton437,textbutton317,textbutton641,textbutton471,textbutton549,textbutton624,textbutton299,textbutton488,textbutton368,textbutton378,textbutton573,textbutton498,textbutton515,textbutton186,textbutton704,textbutton675,textbutton658,textbutton607,textbutton454,textbutton211,textbutton420,textbutton334,textbutton590,textbutton403,og242,shape395,shape233,image237,shape244,text87,textbutton539,textbutton344,textbutton430,textbutton310,textbutton634,textbutton464,textbutton556,textbutton617,textbutton292,textbutton505,textbutton361,textbutton385,textbutton566,textbutton481,textbutton522,textbutton188,textbutton697,textbutton668,textbutton651,textbutton600,textbutton447,textbutton206,textbutton413,textbutton327,textbutton583,textbutton396,og273,shape1356,image687,image689,image691,image693,image695,image685,textbutton268,og736,shape738,textbutton862,shape737,image747,video821,text743,text742,og2206,shape2207,textbutton2237,shape2217,image2227,video2221,text2222,text2223,og2245,shape2246,textbutton2260,shape2250,image2268,video2254,text2255,text2256,og2278,shape2279,textbutton2307,shape2283,image2297,video2287,text2288,text2289,og2315,shape2316,textbutton2330,shape2320,image2338,video2324,text2325,text2326,og2348,shape2349,textbutton2381,shape2353,image2363,video2357,text2358,text2359,og182,shape172,shape173,image174,shape176,text178,text177,og256,shape257,shape258,image259,shape260,text262,text263];
+	var arWnds = [shape80,shape79,text92,image76,image104,image106,image109,shape184,text220,text87,textbutton77,textbutton532,textbutton351,textbutton437,textbutton317,textbutton641,textbutton471,textbutton549,textbutton624,textbutton299,textbutton488,textbutton368,textbutton378,textbutton573,textbutton498,textbutton515,textbutton186,textbutton704,textbutton675,textbutton658,textbutton607,textbutton454,textbutton211,textbutton420,textbutton334,textbutton590,textbutton403,shape395,shape233,image237,shape244,textbutton539,textbutton344,textbutton430,textbutton310,textbutton634,textbutton464,textbutton556,textbutton617,textbutton292,textbutton505,textbutton361,textbutton385,textbutton566,textbutton481,textbutton522,textbutton188,textbutton697,textbutton668,textbutton651,textbutton600,textbutton447,textbutton206,textbutton413,textbutton327,textbutton583,textbutton396,shape1356,image687,image689,image691,image693,image695,image685,textbutton2910,textbutton268,shape738,textbutton862,shape737,image747,video821,text743,text742,shape2207,textbutton2237,shape2217,image2227,video2221,text2222,text2223,shape2246,textbutton2260,shape2250,image2268,video2254,text2255,text2256,shape2279,textbutton2307,shape2283,image2297,video2287,text2288,text2289,shape2316,textbutton2330,shape2320,image2338,video2324,text2325,text2326,shape2349,textbutton2381,shape2353,image2363,video2357,text2358,text2359,shape172,shape173,image174,shape176,text178,text177,shape257,shape258,image2904,shape2905,text262,text263];
+	var arAttachObj = [og4,shape80,shape79,textbutton77,text92,image76,image104,image106,image109,og804,og791,og714,shape184,text220,og874,og976,og2609,textbutton532,textbutton351,textbutton437,textbutton317,textbutton641,textbutton471,textbutton549,textbutton624,textbutton299,textbutton488,textbutton368,textbutton378,textbutton573,textbutton498,textbutton515,textbutton186,textbutton704,textbutton675,textbutton658,textbutton607,textbutton454,textbutton211,textbutton420,textbutton334,textbutton590,textbutton403,og242,shape395,shape233,image237,shape244,text87,textbutton539,textbutton344,textbutton430,textbutton310,textbutton634,textbutton464,textbutton556,textbutton617,textbutton292,textbutton505,textbutton361,textbutton385,textbutton566,textbutton481,textbutton522,textbutton188,textbutton697,textbutton668,textbutton651,textbutton600,textbutton447,textbutton206,textbutton413,textbutton327,textbutton583,textbutton396,og273,shape1356,image687,image689,image691,image693,image695,image685,textbutton2910,textbutton268,og736,shape738,textbutton862,shape737,image747,video821,text743,text742,og2206,shape2207,textbutton2237,shape2217,image2227,video2221,text2222,text2223,og2245,shape2246,textbutton2260,shape2250,image2268,video2254,text2255,text2256,og2278,shape2279,textbutton2307,shape2283,image2297,video2287,text2288,text2289,og2315,shape2316,textbutton2330,shape2320,image2338,video2324,text2325,text2326,og2348,shape2349,textbutton2381,shape2353,image2363,video2357,text2358,text2359,og182,shape172,shape173,image174,shape176,text178,text177,og256,shape257,shape258,image2904,shape2905,text262,text263];
 	var arPooledMedia = [];
 }
 
